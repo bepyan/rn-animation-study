@@ -15,7 +15,7 @@ const GrowBall = () => {
   const pressed = useSharedValue(false);
 
   const movingHandler = useAnimatedGestureHandler({
-    onStart: (_, ctx) => {
+    onStart: (_, ctx: { startX: number; startY: number }) => {
       pressed.value = true;
       ctx.startX = x.value;
       ctx.startY = y.value;

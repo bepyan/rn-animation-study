@@ -1,3 +1,6 @@
+// jsx를 쓰는 이유... onGestureEvent 타입과 movingHandler 타입이 충돌난다..
+// Types of parameters 'event' and 'event' are incompatible.
+
 import React from "react";
 import { TapGestureHandler } from "react-native-gesture-handler";
 import Animated, {
