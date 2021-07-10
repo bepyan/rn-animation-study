@@ -9,9 +9,9 @@ import Animated, {
 } from "react-native-reanimated";
 import { Container } from "../atoms";
 
-const Box = () => {
+const SpringMove = () => {
   const offset = useSharedValue(0);
-  offset.value = withTiming(0, {
+  offset.value = withTiming(100, {
     duration: 500,
     easing: Easing.out(Easing.exp),
   });
@@ -68,7 +68,7 @@ const Box = () => {
     </Container>
   );
 };
-export default Box;
+export default SpringMove;
 
 const styles = StyleSheet.create({
   box: {
