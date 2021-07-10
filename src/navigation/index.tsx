@@ -8,6 +8,7 @@ import Wobble from "../screens/Wobble";
 import TabGesture from "../screens/TabGesture";
 import PanMovingBall from "../screens/PanMovingBall";
 import PanMovingBackBall from "../screens/PanMovingBackBall";
+import TodoList from "../screens/TodoList";
 
 const Drawer = createDrawerNavigator();
 
@@ -22,6 +23,7 @@ export default () => {
         <Drawer.Screen name="TabGesture" component={TabGesture} />
         <Drawer.Screen name="PanMovingBall" component={PanMovingBall} />
         <Drawer.Screen name="PanMovingBackBall" component={PanMovingBackBall} />
+        <Drawer.Screen name="TodoList" component={TodoList} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
