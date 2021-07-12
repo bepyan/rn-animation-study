@@ -9,6 +9,7 @@ import TabGesture from "../screens/TabGesture";
 import PanMovingBall from "../screens/PanMovingBall";
 import PanMovingBackBall from "../screens/PanMovingBackBall";
 import TodoList from "../screens/TodoList";
+import CountDown from "../screens/CountDown";
 
 const Drawer = createDrawerNavigator();
 
@@ -24,6 +25,7 @@ export default () => {
         <Drawer.Screen name="PanMovingBall" component={PanMovingBall} />
         <Drawer.Screen name="PanMovingBackBall" component={PanMovingBackBall} />
         <Drawer.Screen name="TodoList" component={TodoList} />
+        <Drawer.Screen name="CountDown" component={CountDown} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
