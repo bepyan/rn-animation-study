@@ -10,6 +10,7 @@ import PanMovingBall from "../screens/PanMovingBall";
 import PanMovingBackBall from "../screens/PanMovingBackBall";
 import TodoList from "../screens/TodoList";
 import CountDown from "../screens/CountDown";
+import HeadPhonesCarousel from "../headphones-carousel/App";
 
 const Drawer = createDrawerNavigator();
 
@@ -26,6 +27,10 @@ export default () => {
         <Drawer.Screen name="PanMovingBackBall" component={PanMovingBackBall} />
         <Drawer.Screen name="TodoList" component={TodoList} />
         <Drawer.Screen name="CountDown" component={CountDown} />
+        <Drawer.Screen
+          name="HeadPhonesCarousel"
+          component={HeadPhonesCarousel}
+        />
       </Drawer.Navigator>
     </NavigationContainer>
   );
